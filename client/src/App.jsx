@@ -23,7 +23,7 @@ function App() {
     setShowDownloadButton(false);
 
     try {
-      const BASE_URL = 'http://localhost:3000';
+      const BASE_URL = 'https://ai-code-editor-o0ek.onrender.com';
       const response = await fetch(`${BASE_URL}/generate-codes?prompt=${encodeURIComponent(inputValue)}`);
       
       if (!response.ok) {
